@@ -4,12 +4,15 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build -w",
+        "dev": "vite --emptyOutDir",
+        "build": "vite build -w --emptyOutDir",
         "preview": "vite preview"
     },
     "devDependencies": {
         "@vitejs/plugin-legacy": "^4.0.2",
         "vite": "^4.2.0"
+    },
+    "dependencies": {
+        "json-server": "^0.17.3"
     }
 }

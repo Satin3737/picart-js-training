@@ -1,6 +1,7 @@
 import spinner from '../../img/spinner.gif';
 import okImg from '../../img/ok.png';
 import failImg from '../../img/fail.png';
+import {postData} from "../services/requests.js";
 
 const forms = () => {
     const forms = document.querySelectorAll('form');
@@ -20,15 +21,6 @@ const forms = () => {
         designer: './server.php',
         question: './question.php'
     }
-    
-    const postData = async (url, data) => {
-        let res = await fetch(url, {
-            method: 'POST',
-            body: data
-        });
-        
-        return await res.text();
-    };
     
     const clearInputs = () => {
         inputs.forEach(input => {

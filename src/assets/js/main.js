@@ -3,6 +3,7 @@ import sliders from "./modules/sliders.js";
 import forms from "./modules/forms.js";
 import mask from "./modules/mask.js";
 import checkTextInputs from "./modules/checkTextInputs.js";
+import showMore from "./modules/showMore.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
+    showMore('.button-styles', '#styles .row');
 });
