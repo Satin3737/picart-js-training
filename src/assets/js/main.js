@@ -4,6 +4,8 @@ import forms from "./modules/forms.js";
 import mask from "./modules/mask.js";
 import checkTextInputs from "./modules/checkTextInputs.js";
 import showMore from "./modules/showMore.js";
+import calc from "./modules/calc.js";
+import filter from "./modules/filter.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -14,4 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
     showMore('.button-styles', '#styles .row');
+    calc('#size', '#material', '#options', '.promocode', '.calc-price');
+    filter();
 });
