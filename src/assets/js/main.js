@@ -8,6 +8,8 @@ import calc from "./modules/calc.js";
 import filter from "./modules/filter.js";
 import picturesSize from "./modules/picturesSize.js";
 import accordion from "./modules/accordion.js";
+import burger from "./modules/burger.js";
+import scrolling from "./modules/scrolling.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -22,4 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     filter();
     picturesSize('.sizes-block');
     accordion('.accordion-heading');
+    burger('.burger-menu', '.burger');
+    scrolling('.pageup');
 });
