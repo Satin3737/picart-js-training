@@ -6,6 +6,8 @@ import checkTextInputs from "./modules/checkTextInputs.js";
 import showMore from "./modules/showMore.js";
 import calc from "./modules/calc.js";
 import filter from "./modules/filter.js";
+import picturesSize from "./modules/picturesSize.js";
+import accordion from "./modules/accordion.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -18,4 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     showMore('.button-styles', '#styles .row');
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
+    picturesSize('.sizes-block');
+    accordion('.accordion-heading');
 });
