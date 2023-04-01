@@ -2,6 +2,7 @@ import spinner from '../../img/spinner.gif';
 import okImg from '../../img/ok.png';
 import failImg from '../../img/fail.png';
 import {postData} from "../services/requests.js";
+import {cropFileName} from "../services/helper.js";
 
 const forms = () => {
     const forms = document.querySelectorAll('form');
@@ -33,11 +34,7 @@ const forms = () => {
     
     upload.forEach(input => {
         input.addEventListener('input', () => {
-            let dots;
-            const arr = input.files[0].name.split('.');
-            arr[0].length > 5 ? dots = '...' : dots = '.';
-            input.previousElementSibling.textContent = arr[0].substring(0, 6) + dots + arr[1];
-            
+            cropFileName(input);
         });
     });
 
